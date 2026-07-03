@@ -89,10 +89,10 @@ export default function EducationSection() {
               </div>
             </div>
           </AccordionTrigger>
-          {education.description && (
+          {(education as any).description && (
             <AccordionContent className="p-0 ml-11 md:ml-13 text-xs sm:text-sm text-muted-foreground mt-2">
               <div className="font-sans text-muted-foreground text-pretty max-w-[600px]">
-                {education.description}
+                {(education as any).description}
               </div>
             </AccordionContent>
           )}
