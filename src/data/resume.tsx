@@ -93,6 +93,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/resume.pdf", icon: Icons.resume, label: "Resume", external: true },
   ],
   contact: {
     email: "kothakapuvishnukiran@gmail.com",
