@@ -42,6 +42,7 @@ export default function ProjectsSection() {
                                 href={project.href}
                                 key={project.title}
                                 title={project.title}
+                                tagline={"tagline" in project ? (project as any).tagline : undefined}
                                 description={project.description}
                                 dates={project.dates}
                                 tags={project.technologies}

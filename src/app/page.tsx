@@ -8,7 +8,8 @@ import Markdown from "react-markdown";
 import ContactSection from "@/components/section/contact-section";
 import { EducationCard } from "@/components/education-card";
 import { GithubActivity } from "@/components/github-activity";
-import HackathonsSection from "@/components/section/hackathons-section";
+import AchievementsSection from "@/components/section/achievements-section";
+import OpenSourceSection from "@/components/section/open-source-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
 import EducationSection from "@/components/section/education-section";
@@ -118,9 +119,14 @@ export default function Page() {
           <ProjectsSection />
         </BlurFade>
       </section>
-      <section id="hackathons">
+      <section id="open-source">
         <BlurFade delay={BLUR_FADE_DELAY * 13}>
-          <HackathonsSection />
+          <OpenSourceSection />
+        </BlurFade>
+      </section>
+      <section id="achievements">
+        <BlurFade delay={BLUR_FADE_DELAY * 15}>
+          <AchievementsSection />
         </BlurFade>
       </section>
       <section id="contact">

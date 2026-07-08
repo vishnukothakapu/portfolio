@@ -28,6 +28,7 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
 interface Props {
   title: string;
   href?: string;
+  tagline?: string;
   description: string;
   dates: string;
   tags: readonly string[];
@@ -45,6 +46,7 @@ interface Props {
 export function ProjectCard({
   title,
   href,
+  tagline,
   description,
   dates,
   tags,
@@ -107,9 +109,13 @@ export function ProjectCard({
       </div>
       <div className="p-6 flex flex-col gap-3 flex-1">
         <div className="flex items-start justify-between gap-2">
-          <div className="flex flex-col gap-1">
-            <h3 className="font-semibold">{title}</h3>
-            <time className="text-xs text-muted-foreground">{dates}</time>
+          <div className="flex flex-col gap-0.5">
+            <h3 className="font-semibold leading-tight">{title}</h3>
+            {tagline && (
+              <p className="text-[11px] font-medium text-muted-foreground/70 tracking-wide capitalize">
+                {tagline}
+              </p>
+            )}
           </div>
           <Link
             href={href || "#"}

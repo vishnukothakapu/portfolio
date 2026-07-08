@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon, Star } from "lucide-react";
 import {
   SiPython, SiJavascript, SiTypescript, SiGo, SiCplusplus, SiSolidity, SiGnubash,
   SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiExpo, SiFastapi, SiEjs,
@@ -173,12 +173,64 @@ export const DATA = {
       location: "Basar, Telangana",
     },
   ],
+  openSourceContributions: [
+    {
+      repo: "kubernetes-sigs/headlamp",
+      repoUrl: "https://github.com/kubernetes-sigs/headlamp",
+      pr: "#5223",
+      prUrl: "https://github.com/kubernetes-sigs/headlamp/pull/5223",
+      description: "frontend: Add missing configuration resources to Resource Map",
+      status: "merged" as const,
+    },
+    {
+      repo: "kubernetes-sigs/node-readiness-controller",
+      repoUrl: "https://github.com/kubernetes-sigs/node-readiness-controller",
+      pr: "#224",
+      prUrl: "https://github.com/kubernetes-sigs/node-readiness-controller/pull/224",
+      description: "fix(controller): handle long rule names in bootstrap annotation keys",
+      status: "merged" as const,
+    },
+    {
+      repo: "kubernetes-sigs/headlamp",
+      repoUrl: "https://github.com/kubernetes-sigs/headlamp",
+      pr: "#5166",
+      prUrl: "https://github.com/kubernetes-sigs/headlamp/pull/5166",
+      description: "frontend(KubeConfigLoader): Add Storybook stories for all states",
+      status: "merged" as const,
+    },
+
+    {
+      repo: "hiero-ledger/heka-identity-platform",
+      repoUrl: "https://github.com/hiero-ledger/heka-identity-platform",
+      pr: "#96",
+      prUrl: "https://github.com/hiero-ledger/heka-identity-platform/pull/96",
+      description: "fix(auth): ensure BearerGuard and UserAuthGuard return boolean",
+      status: "merged" as const,
+    },
+    {
+      repo: "hiero-ledger/heka-identity-platform",
+      repoUrl: "https://github.com/hiero-ledger/heka-identity-platform",
+      pr: "#51",
+      prUrl: "https://github.com/hiero-ledger/heka-identity-platform/pull/51",
+      description: "feat(health): expand monitoring in identity and auth services",
+      status: "merged" as const,
+    },
+    {
+      repo: "krkn-chaos/website",
+      repoUrl: "https://github.com/krkn-chaos/website",
+      pr: "#328",
+      prUrl: "https://github.com/krkn-chaos/website/pull/328",
+      description: "feat(blog): add client-side category and type filter bar",
+      status: "merged" as const,
+    },
+  ],
   projects: [
     {
       title: "LinkID",
       href: "https://github.com/vishnukothakapu/linkid",
       dates: "2024",
       active: true,
+      tagline: "Professional Identity Router",
       description:
         "Your professional identity, simplified. One username. Clean, predictable links for every platform. Platform routing, OAuth login, and real-time dashboard.",
       technologies: [
@@ -203,10 +255,12 @@ export const DATA = {
       href: "https://github.com/vishnukothakapu/Atlas",
       dates: "2024",
       active: true,
+      tagline: "Self-Healing Distributed Cache",
       description:
         "A lightweight, distributed, in-memory key-value store built with Go. Features consistent hashing, partition replication, heartbeat-based failure detection, and automatic client read failovers.",
       technologies: [
         "Go",
+        "Distributed Systems",
         "Docker",
         "Apache Kafka",
       ],
@@ -225,6 +279,7 @@ export const DATA = {
       href: "https://github.com/Jaisheesh-2006/ChitSetu",
       dates: "2024",
       active: true,
+      tagline: "Decentralized Chit Fund Platform",
       description:
         "A decentralized platform combining fintech workflows with blockchain-backed recording. Built during a hackathon in a team of 4. Developed the Solidity smart contracts and blockchain integration.",
       technologies: [
@@ -249,6 +304,7 @@ export const DATA = {
       href: "https://github.com/vishnukothakapu/habit-tracker-expo",
       dates: "2023",
       active: true,
+      tagline: "Build Better Habits",
       description:
         "A mobile habit tracking application built with React Native and Expo. It allows users to track daily habits, view progress, and maintain streaks with a clean and intuitive user interface.",
       technologies: [
@@ -269,21 +325,41 @@ export const DATA = {
       video: "",
     },
   ],
-  hackathons: [
+  achievements: [
     {
-      title: "Hackathon - HackByte 4.0",
+      title: "HackByte 4.0 - Won 2 Sponsor Tracks",
       dates: "April 2026",
       location: "IIITDM Jabalpur",
       description:
         "Won two sponsor tracks at this 36-hour MLH hackathon. Developed ChitSetu, a decentralized platform combining fintech workflows with blockchain-backed recording.",
-      image: "/hackathon.png",
+      icon: "trophy",
+      banner: "/hackathon.jpeg",
+      logo: "/hackathon.png",
+      logoBg: "#8A00DA",
       links: [
         {
-          title: "Github",
+          title: "GitHub",
           icon: <Icons.github className="h-4 w-4" />,
           href: "https://github.com/Jaisheesh-2006/ChitSetu",
-        }
+        },
       ],
-    }
+    },
+    {
+      title: "Hacktoberfest - Super Contributor",
+      dates: "2025",
+      location: "Global",
+      description:
+        "12+ pull requests merged across open source repositories during Hacktoberfest 2025, earning the Super Contributor badge.",
+      icon: "star",
+      banner: "https://holopin.me/vishnukothakapu",
+      logo: "/hacktober.svg",
+      links: [
+        {
+          title: "Holopin Badges",
+          icon: <Star className="h-4 w-4" />,
+          href: "https://www.holopin.io/@vishnukothakapu#badges",
+        },
+      ],
+    },
   ],
 } as const;
