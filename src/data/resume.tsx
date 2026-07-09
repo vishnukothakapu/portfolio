@@ -19,7 +19,7 @@ export const DATA = {
   description:
     "Software Engineer & Open Source Contributor. I love building things and shipping them. Very active on Github.",
   summary:
-    "I am a versatile Software Engineer with a strong focus on [Web2, Web3, and Mobile App development](#skills). Currently [pursuing an Integrated B.Tech + MBA in Information Technology](#education) at ABV-IIITM Gwalior. I have a passion for architecting distributed systems, [automating DevOps pipelines](#skills), and building scalable modern web applications. Whether it's crafting [self-healing distributed caches in Go](#projects) or developing [decentralized smart contracts](#hackathons), I thrive on solving complex technical challenges. I am also a passionate open source contributor, actively contributing to major projects like Kubernetes and various other repositories.",
+    "I am a versatile Software Engineer with a strong focus on [Web2, Web3, and Mobile App development](#skills). Currently [pursuing an Integrated B.Tech + MBA in Information Technology](#education) at ABV-IIITM Gwalior. I have a passion for architecting distributed systems, [automating DevOps pipelines](#skills), and building scalable modern web applications. Whether it's crafting [self-healing distributed caches in Go](#projects) or developing [decentralized smart contracts](#hackathons), I thrive on solving complex technical challenges. I am also a passionate [open source](#open-source) contributor, actively contributing to major projects like Kubernetes and various other repositories.",
   avatarUrl: "https://avatars.githubusercontent.com/u/108342415?v=4",
   skills: [
     {
